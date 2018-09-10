@@ -54,7 +54,6 @@ bool Search(bstNode* root, int data){
      else{
         return Search(root->right, data);
     }
-
 }
 int main(){
     bstNode* root = NULL;
@@ -82,7 +81,7 @@ int main(){
         Insert(root, array[elements]);
         i++;
     }
-    for (int i = total - 1; i >= 0; i--) 
+    for (int i = 0; i <total; i++) 
     cout << "Your numbers were:" << array[i] << endl;
     // for(int i = 0; i < total; i++)
 	// {
@@ -94,5 +93,6 @@ int main(){
     else {
         cout << "Number not found\n";
     }
+    cout << array[0];
  }
 
